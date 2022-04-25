@@ -1,0 +1,22 @@
+.PHONY: emulator
+emulator:
+	flow emulator start -v
+
+.PHONY: artist_and_buyer_accounts
+artist_and_buyer_accounts:
+	flow accounts create --key f219ecef42a8a39f17cb23b36e7fa624e1a2fddf33635fb84e16079eb588a527d62842b5543283d5bebed472eca1998793458171d2e4e33e6725f0707b48641d
+	flow accounts create --key 046293dbc2881486c2107e9814abd643eb45dbd74d51947da6850ee379ed6f5df048706004e9a0fa3b7f7fef3b329cfda90bf3b67bba0fb3dfa4a284eb70cb4c
+
+.PHONY: marketplace_demo_emulator
+marketplace_demo_emulator:
+	flow accounts create --key f219ecef42a8a39f17cb23b36e7fa624e1a2fddf33635fb84e16079eb588a527d62842b5543283d5bebed472eca1998793458171d2e4e33e6725f0707b48641d
+	flow accounts create --key 046293dbc2881486c2107e9814abd643eb45dbd74d51947da6850ee379ed6f5df048706004e9a0fa3b7f7fef3b329cfda90bf3b67bba0fb3dfa4a284eb70cb4c
+	go run ./demo_emulator/demo_marketplace_emulator.go
+
+.PHONY: marketplace_demo_testnet
+marketplace_demo_testnet:
+	go run ./demo_testnet/demo_marketplace_testnet.go
+
+.PHONY: deploy_contracts
+deploy_contracts:
+	flow project deploy

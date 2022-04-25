@@ -1,0 +1,108 @@
+{
+	"emulators": {
+		"default": {
+			"port": 3569,
+			"serviceAccount": "emulator-account"
+		}
+	},
+	"contracts": {
+		"NonFungibleToken": {
+			"source": "./contracts/core/NonFungibleToken.cdc",
+			"aliases": {
+				"testnet": "0x631e88ae7f1d7c20",
+				"mainnet": "0x1d7e57aa55817448"
+			}
+		},
+		"FungibleToken": {
+			"source": "./contracts/core/FungibleToken.cdc",
+			"aliases": {
+				"testnet": "0x9a0766d93b6608b7",
+				"emulator": "0xee82856bf20e2aa6",
+				"mainnet" :"0xf233dcee88fe0abe"
+			}
+		},
+        "FlowStorageFees": {
+			"source": "./contracts/core/FlowStorageFees.cdc",
+			"aliases": {
+				"testnet": "0x912d5440f7e3769e",
+				"mainnet" : "0xf919ee77447b7497"
+			}
+		},
+		"FlowToken": {
+			"source": "./contracts/core/FlowToken.cdc",
+			"aliases": {
+				"testnet": "0x7e60df042a9c0868",
+				"emulator": "0x0ae53cb6e3f42a79",
+				"mainnet" : "0x1654653399040a61"
+			}
+		},
+		"FUSD": {
+			"source": "./contracts/core/FUSD.cdc",
+			"aliases": {
+				"testnet": "0xe223d8a629e49c68",
+				"mainnet": "0x3c5959b568896393"
+			}
+		},
+		"NFTStorefront": "./contracts/core/NFTStorefront.cdc",
+        "LithokenFee": "./contracts/LithokenFee.cdc",
+        "RedevNFT": "./contracts/RedevNFT.cdc",
+        "LithokenNFT": "./contracts/LithokenNFT.cdc",
+        "LithokenOrder": "./contracts/LithokenOrder.cdc"
+
+	},
+	"networks": {
+		"emulator": "127.0.0.1:3569",
+		"mainnet": "access.mainnet.nodes.onflow.org:9000",
+		"testnet": "access.testnet.nodes.onflow.org:9000"
+	},
+	"accounts": {
+		"emulator-account": {
+			"address": "0xf8d6e0586b0a20c7",
+			"key": "bfa37a651c9e983baff25038a94cd1b4031f70965e377b1c4e75ac2ff922d4c8"
+		},
+		"emulator-artist": {
+			"address": "0x01cf0e2f2f715450",
+			"key": "180ce9a324d89cf45f399233c37d88fe8cae86ef29a9cc322bc635a062bbd465"
+		},
+		"emulator-buyer1": {
+			"address": "0x179b6b1cb6755e31",
+			"key": "73174ef93331879989e8a47eb1ab99fe39ed21865fc73400bb2d73eecd24471f"
+		},
+		"testnet-buyer1" : {
+			"address": "0x97d54256041dde4d",
+			"key": "0de00c8d73297aea37e137c5f41f76a641107ee602cd5438a98d03a636b5fa02"
+		},
+		"testnet-admin" : {
+			"address": "0xee10e1f0d87f28c1",
+			"key": "bfa37a651c9e983baff25038a94cd1b4031f70965e377b1c4e75ac2ff922d4c8"
+		},
+		"testnet-artist" : {
+			"address": "0x0686a4d4671398f4",
+			"key": "d698e49cc376be57ec5960c4f82c0ed989b6441f5e3012462b6feedecef6d7dc"
+		}
+		
+	},
+	
+	"deployments": {
+		"testnet" : {
+			"testnet-admin" : [
+				"RedevNFT",
+				"LithokenNFT", 
+				"LithokenFee", 
+				"LithokenOrder",
+				"NFTStorefront"
+			]
+		},
+		
+		"emulator": {
+			"emulator-account": [
+				"NonFungibleToken",
+				"NFTStorefront",
+				"RedevNFT",
+				"LithokenNFT", 
+				"LithokenFee", 
+				"LithokenOrder"
+			]
+		}
+	}
+}
