@@ -59,7 +59,7 @@ On the emulator :
     
     In the first terminal (ensure flow emulator is not already running):
   - `make emulator`
-    In the second terminal :
+   In the second terminal :
   - `make marketplace_demo_emulator`
 
 On the Testnet :
