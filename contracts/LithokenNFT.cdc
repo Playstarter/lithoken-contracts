@@ -1,5 +1,5 @@
 //-------------- Mainnet -----------------------------
-import NonFungibleToken from "core/NonFungibleToken.cdc"
+import NonFungibleToken from 0x1d7e57aa55817448
 import RedevNFT from "RedevNFT.cdc"
 // -------------------------------------------------
 
