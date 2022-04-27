@@ -1,9 +1,4 @@
-//------------ TESTNET ----------------------------
-//import NonFungibleToken from 0x631e88ae7f1d7c20
-//import RedevNFT from "./RedevNFT.cdc"
-//-------------------------------------------------
-
-//-------------- LOCAL -----------------------------
+//-------------- Mainnet -----------------------------
 import NonFungibleToken from "core/NonFungibleToken.cdc"
 import RedevNFT from "RedevNFT.cdc"
 // -------------------------------------------------
