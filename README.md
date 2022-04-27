@@ -9,10 +9,10 @@ The smart contracts are written in [Cadence](https://docs.onflow.org/cadence).
 
 | Contract     | Mainnet             | Testnet              |
 |--------------|---------------------|----------------------|
-| LithokenFee  | `                 ` | `0xee10e1f0d87f28c1` |
-| RedevNFT     | `                 ` | `0xee10e1f0d87f28c1` |
-| LithokenNFT  | `                 ` | `0xee10e1f0d87f28c1` |
-| LithokenOrder| `                 ` | `0xee10e1f0d87f28c1` |
+| LithokenFee  | `0x4e277be3d96ae6a0`| `0xee10e1f0d87f28c1` |
+| RedevNFT     | `0x4e277be3d96ae6a0`| `0xee10e1f0d87f28c1` |
+| LithokenNFT  | `0x4e277be3d96ae6a0`| `0xee10e1f0d87f28c1` |
+| LithokenOrder| `0x4e277be3d96ae6a0`| `0xee10e1f0d87f28c1` |
 
 ## Smart contracts
 
