@@ -1,6 +1,6 @@
 //-------------- Mainnet -----------------------------
 import NonFungibleToken from 0x1d7e57aa55817448
-import RedevNFT from "RedevNFT.cdc"
+import RedevNFT from 0x4e277be3d96ae6a0
 // -------------------------------------------------
 
 // LithokenNFT token contract
