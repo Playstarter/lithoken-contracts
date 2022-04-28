@@ -1,7 +1,7 @@
 //---------- MAINNET -------------------------------
-import LithokenFee from "./LithokenFee.cdc"
+import LithokenFee from 0x4e277be3d96ae6a0
 import FungibleToken from 0xf233dcee88fe0abe
-import NFTStorefront from "core/NFTStorefront.cdc"
+import NFTStorefront from 0x4e277be3d96ae6a0
 import NonFungibleToken from 0x1d7e57aa55817448
 //--------------------------------------------------
 
