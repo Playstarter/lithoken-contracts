@@ -80,10 +80,24 @@
 			"address": "0x0686a4d4671398f4",
 			"key": "d698e49cc376be57ec5960c4f82c0ed989b6441f5e3012462b6feedecef6d7dc"
 		}
+		,
+		"mainnet-admin" : {
+			"address": "0x4e277be3d96ae6a0",
+			"key": ""
+		}
 		
 	},
 	
 	"deployments": {
+		"mainnet" : {
+			"mainnet-admin" : [
+				"RedevNFT",
+				"LithokenNFT", 
+				"LithokenFee", 
+				"LithokenOrder",
+				"NFTStorefront"
+			]
+		},
 		"testnet" : {
 			"testnet-admin" : [
 				"RedevNFT",
